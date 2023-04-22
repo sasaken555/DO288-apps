@@ -14,8 +14,11 @@ echo "---> Installing application source"
 # TODO: You should copy your statics files
 cp -Rf /tmp/src/*.html ./
 
+DATE=$(date '+%Y-%m-%d')
+
 echo "---> Creating info page"
 # TODO: You should print Date in YYYY-MM-DD format with "Page built on __Date__" in info.html
+echo "Page built on $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
