@@ -12,6 +12,7 @@ config_s2i
 
 echo "---> Installing application source"
 # TODO: You should copy your statics files
+cp -Rf /tmp/src/*.html ./
 
 echo "---> Creating info page"
 # TODO: You should print Date in YYYY-MM-DD format with "Page built on __Date__" in info.html
